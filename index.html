@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nami Webpage Responsive Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Responsive Design</h1>
+  <p class="w3-xlarge">Nami Providence Restaurant Webpage</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Original Webpage</h1>
+      <h5 class="w3-padding-16">Choice</h5>
+      <p class="w3-text-grey">
+        The website I decided to choose was a restaurant webapage, link: <a href="https://namiprov.com">Nami</a>. <br>
+        I chose this one to analyze and redesign as I felt that on a base level the webpage is very hard to digest, 
+        features of the webpage are unnoticeable, and some features are redudant or not working.
+      </p>
+
+      <h5 class="w3-padding-16">Problems</h5>
+      <h6>Significant Design Issues</h6>
+      <p>
+        <ul class="w3-text-grey">
+          <li>Bad contrast: the text is dark grey while background is black, which makes the text really hard to read</li>
+          <li>Legibility: The stylish subtitles/title font text is hard to read, letters are too thick and hard to distinguish</li>
+          <li>Bad alignment from hometitle to content of page, it almost overlaps with very little space. It appears as if the logo is NamiHome instead of Nami</li>
+          <li>Grouping - closure: For the customer reviews, there is no form of closure for each review which makes it hard to see each review as its own</li>
+          <li>For header menu/buttons, it does not make a lot of sense to have buttons and then a dropdown menu for the remaining categories, especially when the 
+            displayed buttons are not the most important ("food/drink menu" would be more important than "buy gift cards").
+          </li>
+          <li>Hierarchy: The major hierachy for text font sizes is 3 groups. It is confusing as the group 1 is the titles, then group 2 
+            subtitles or comments/quotes (which is confusing), then group 3 of body text. Furthermore, the group 2 comments/quotes are usually 
+            placed after group 3 text which can be confusing.
+          </li>
+          <li>Distinction: There isn't enough distinction between many different cateogries, its too monotone. For example the 
+            different titles/subtitles, different blocks of the page, and hyperlinks are almost completely blended into the text with no 
+            distinction.
+          </li>
+          <li>Unresponsive page for different layouts: For mobile version or smaller windows the header buttons/menu overlaps other parts of the text</li>
+        </ul>
+      </p>
+      <h6>Usability</h6>
+      <p class="w3-text-grey">
+        There are issues where some buttons do not work. For example the (hours & location) button does not direct to right place, it does nothing.
+        Some features would be missed, for example its almost impossible to tell which text are hyperlinks due to no distinction.
+      </p>
+      <h6>Learnability</h6>
+      <p class="w3-text-grey">
+        Learnability is a problem for the header buttons/menu. How they operate is confusing as there are redudant buttons which are the 
+        (about) and (hours & location) which are almost identical to the function of the (home) button, additionally they do not work which makes it 
+        even more confusing to understand.
+      </p>
+      <h6>Memorability</h6>
+      <p class="w3-text-grey">
+        Memorability would be a significant issue with a major factor being that everything is too monotone. With no distinction its hard to piece 
+        out different parts of the webpage to remember. Also everything is really hard to read, so its hard for the user to take a snapshot of the 
+        webpage in their head. Additionally, inconjuction to learnability with some functions confusing to learn, it would be hard for the user 
+        to remember how to properly navigate through the functions immmediately upon next use.
+      </p>
+      <h6>Accessibility</h6>
+      <p class="w3-text-grey">
+        Using the <a href="https://wave.webaim.org/report#/https://namiprov.com/">WebAIM WAVE</a> to detect possible accessibility problems on the webpage, 
+        the issues are mainly contrast errors and alerts. I with both of them as contrast is definitely a major issues throughout the page, and for the alerts 
+        with skipped heading level, it is confusing as I mentioned earlier about Hierarchy in Significant Design Issues.
+      </p>
+    </div>
+
+    
+
+    <div class="w3-third w3-center">
+        <img src="images/Original Webpage.png" alt="Original Webpage" width="500px" height="auto" top="500px">
+    </div>
+  </div>
+</div>
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h1>New Design</h1>
+      <h5 class="w3-padding-16">Low-Fi Prototype</h5>
+      <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); grid-gap: 20px;">
+        <img src="images/Low-Fi Desktop.png" alt="Low-Fi Desktop" width="auto" height="300px">
+        <img src="images/Low-Fi Tablet.png" alt="Low-Fi Tablet" width="auto" height="300px">
+        <img src="images/Low-Fi Mobile.png" alt="Low-Fi Mobile" width="auto" height="300px">
+      </div>
+      <h5 class="w3-padding-16">High-Fi Prototype</h5>
+      <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); grid-gap: 20px;">
+        <img src="images/High-Fi Desktop.png" alt="High-Fi Desktop" width="auto" height="300px">
+        <img src="images/High-Fi Tablet.png" alt="High-Fi Tablet" width="auto" height="300px">
+        <img src="images/High-Fi Mobile.png" alt="High-Fi Mobile" width="auto" height="300px">
+      </div>
+    </div>
+</div>
+
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>New Webpage</h1>
+        <img src="images/New Webpage.png" width="auto" height="500px">
+        <p class="w3-text-grey">
+            Link: <a href="https://lazypenguin888.github.io/Nami-Recreated/">Nami Recreated</a>
+        </p>
+    </div>
+  </div>  
+
+</body>
+</html>
